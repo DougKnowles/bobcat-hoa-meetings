@@ -32,7 +32,7 @@ li.mtg{background:var(--card);border:1px solid var(--line);border-radius:8px;pad
 li.mtg.committee{border-left:4px solid #b9c6d6}
 li.mtg.board{border-left:4px solid var(--accent)}
 .hd{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
-.date{font-weight:700}
+.date{font-weight:700;white-space:nowrap}
 .time{color:var(--muted)}
 .badge{margin-left:auto;font-size:.78rem;padding:1px 8px;border-radius:10px;background:#eef0f3;color:var(--muted);white-space:nowrap}
 .badge.ok{background:#e5f4ea;color:var(--ok)}
@@ -44,6 +44,7 @@ ul.docs{list-style:none;margin:6px 0 0;padding:0}
 ul.docs>li{margin:3px 0}
 a.doc{font-weight:600;color:var(--accent)}
 a.alt{color:var(--accent)}
+a.doc.draft{color:#9a5b00}
 a.ext::after{content:" \2197";font-size:.8em}
 .q{color:var(--muted);font-size:.88rem}
 .fmt{font-size:.72rem;border:1px solid var(--line);border-radius:4px;padding:0 4px;color:var(--muted)}
@@ -78,14 +79,14 @@ footer{max-width:900px;margin:0 auto;padding:16px 12px 40px;color:var(--muted);f
 <li class="mtg board" id="m-2026-11-17-board"><div class="hd"><span class="date">Tue, Nov 17, 2026</span><span class="badge sched">Scheduled</span></div><div class="body">Board of Directors meeting</div></li>
 </ul>
 <h3>October 2026</h3><ul class="mtgs">
-<li class="mtg board" id="m-2026-10-27-board"><div class="hd"><span class="date">Tue, Oct 27, 2026</span><span class="badge sched">Scheduled</span></div><div class="body">Board of Directors meeting</div></li>
+<li class="mtg board" id="m-2026-10-27-board"><div class="hd"><span class="date">Tue, Oct 27, 2026</span><span class="badge warn">Agenda posted; minutes not available yet</span></div><div class="body">Board of Directors meeting</div><ul class="docs"><li><a class="doc" href="docs/2026/2026-10-27_board_agenda.pdf">Agenda</a> <span class="q">(from the board packet)</span><span class="src">extract of board packet</span></li></ul></li>
 <li class="mtg board" id="m-2026-10-20-board"><div class="hd"><span class="date">Tue, Oct 20, 2026</span><span class="badge off">Not held</span></div><div class="body">Board of Directors meeting</div></li>
 </ul>
 <h3>September 2026</h3><ul class="mtgs">
-<li class="mtg board" id="m-2026-09-15-board"><div class="hd"><span class="date">Tue, Sep 15, 2026</span> <span class="time">10:00 AM</span><span class="badge warn">Agenda posted; minutes not available yet</span></div><div class="body">Board of Directors meeting</div><ul class="docs"><li><a class="doc" href="docs/2026/2026-09-15_board_agenda.jpg">Agenda</a> <span class="fmt">JPG</span><span class="src">HOA site copy</span></li></ul><p class="note">Minutes would normally be approved at the Oct 20 meeting.</p></li>
+<li class="mtg board" id="m-2026-09-15-board"><div class="hd"><span class="date">Tue, Sep 15, 2026</span> <span class="time">10:00 AM</span><span class="badge warn">Held; only unapproved draft minutes</span></div><div class="body">Board of Directors meeting</div><ul class="docs"><li><a class="doc" href="docs/2026/2026-09-15_board_agenda.jpg">Agenda</a> <span class="fmt">JPG</span><span class="src">HOA site copy</span></li><li><a class="doc draft" href="docs/2026/2026-09-15_board_minutes_UNAPPROVED-draft.pdf">Unapproved minutes (from packet)</a> <span class="q">(draft, pages 5-6 of the Oct 27, 2026 agenda packet, watermarked UNAPPROVED DRAFT)</span><span class="src">extract of board packet</span></li></ul><p class="note">Only draft minutes are available. They are up for approval at the Oct 27 meeting.</p></li>
 </ul>
 <h3>August 2026</h3><ul class="mtgs">
-<li class="mtg board" id="m-2026-08-18-board"><div class="hd"><span class="date">Tue, Aug 18, 2026</span><span class="badge warn">Held; minutes not available yet</span></div><div class="body">Board of Directors meeting</div><ul class="docs"><li><a class="doc" href="docs/2026/2026-08-18_board_agenda_draft.pdf">Agenda</a> <span class="q">(draft)</span><span class="src">Sentry portal copy</span><div class="ov">Other version: <a class="alt ext" href="https://www.bobcattrailhoa.com/bobcattrailhoa/external.html?mode=d&amp;xlink=dwnldfile.html%3Fa%3Dsnd%26file_id%3D679" rel="noopener">posted version</a> <span class="q">(HOA site, resident login)</span></div></li></ul><p class="note">Held (the Sep 15 agenda approves its minutes); the minutes are not available yet.</p></li>
+<li class="mtg board" id="m-2026-08-18-board"><div class="hd"><span class="date">Tue, Aug 18, 2026</span><span class="badge warn">Held; only unapproved draft minutes</span></div><div class="body">Board of Directors meeting</div><ul class="docs"><li><a class="doc" href="docs/2026/2026-08-18_board_agenda.pdf">Agenda</a> <span class="q">(from the board packet)</span><span class="src">extract of board packet</span><div class="ov">Other version: <a class="alt" href="docs/2026/2026-08-18_board_agenda_draft.pdf">draft</a><span class="src">Sentry portal copy</span></div></li><li><a class="doc draft" href="docs/2026/2026-08-18_board_minutes_UNAPPROVED-draft.pdf">Unapproved minutes (from packet)</a> <span class="q">(draft, pages 4-5 of the Sep 15, 2026 agenda packet, watermarked UNAPPROVED DRAFT)</span><span class="src">extract of board packet</span></li></ul><p class="note">Only draft minutes are available. The draft Sep 15 minutes record that the motion to approve them failed.</p></li>
 <li class="mtg board" id="m-2026-08-05-workshop"><div class="hd"><span class="date">Wed, Aug 5, 2026</span><span class="badge warn">Minutes not available</span></div><div class="body">Board workshop</div><ul class="docs"><li><a class="doc ext" href="https://www.bobcattrailhoa.com/bobcattrailhoa/external.html?mode=d&amp;xlink=dwnldfile.html%3Fa%3Dsnd%26file_id%3D678" rel="noopener">Agenda</a> <span class="q">(HOA site, resident login)</span></li></ul></li>
 </ul>
 <h3>July 2026</h3><ul class="mtgs">
@@ -535,7 +536,7 @@ footer{max-width:900px;margin:0 auto;padding:16px 12px 40px;color:var(--muted);f
 </section>
 </main>
 <footer>
-<p>Unofficial index compiled from HOA website, Sentry Management portal, and former manager (AMI) archive. Last updated October 23, 2026.</p>
+<p>Unofficial index compiled from HOA website, Sentry Management portal, and former manager (AMI) archive. Last updated Tue Oct 27, 2026, 2:53 PM ET.</p>
 </footer>
 <script>
 document.querySelectorAll('.filter button').forEach(function(b){b.addEventListener('click',function(){
